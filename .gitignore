@@ -1,0 +1,68 @@
+# ====================================================================
+# OS - macOS System Files
+# ====================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotbackup
+
+# ====================================================================
+# OS - Windows System Files
+# ====================================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.cab
+*.msi
+*.msm
+*.msp
+# Windows Update logs or crash dumps
+*.tmp
+*.bak
+
+# ====================================================================
+# OS - Linux System Files
+# ====================================================================
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ====================================================================
+# General Temporary Files and Logs
+# ====================================================================
+*.log
+*.log.*
+*.sublime-workspace
+*.bak
+*.tmp
+*.temp
+*.swp
+*~
+.cache/
+
+# ====================================================================
+# Common Editors and IDEs
+# ====================================================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains
+.idea/
+
+# Vim
+.*.sw[a-z]
+*.un~
+Session.vim
