@@ -114,7 +114,7 @@ Download FrameForge, explore the available versions, and find example animation 
 
 ### [Open the FrameForge Animation Maker Repository](https://github.com/colton1000/frameforge-animation-maker/tree/main)
 
-## 💡 Tips
+## Tips
 
 - Save your animation regularly.
 - Keep backup copies of important `.json` project files.
