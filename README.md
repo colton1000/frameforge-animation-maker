@@ -1,7 +1,130 @@
-this is a animation maker just open the html in any browser and download the .json file and load it into the html with the load button in it if you want to improve my own animation.
-you can also make your own and have fun making one!
-also the json file that has FOR PLAYBACK is for only the playback_fixed2.
-new update! i added smooth drawing and opacity and allow background upload to use the latest version download animation_creator_smooth_opacity_background.html thanks!
-i just fixed some bugs with the file now get the updated version it also added MORE COOL STUFF! like paint brush and save animation as mp4.
-i made one of the last updates the newest one is animation_creator_canvas_ui_themes.html thanks and have fun!
-the newest update is here! you can download frameforge_3d now! thanks.
+# FrameForge Animation Maker
+
+Welcome to **FrameForge**, a fun animation maker that runs directly in your web browser!
+
+No complicated setup or installation is required. Simply download the latest HTML file, open it in your browser, and start creating animations.
+
+## Features
+
+Depending on the version you use, FrameForge includes features such as:
+
+- Smooth drawing
+- Multiple drawing tools and paint brushes
+- Adjustable brush opacity
+- Custom background uploads
+- Frame-by-frame animation
+-  Animation project saving and loading
+- MP4 animation exporting
+- Custom canvas themes
+- 3D animation tools
+- Dedicated animation playback
+- And much more!
+
+##  Getting Started
+
+1. Download the latest FrameForge HTML file.
+2. Open the downloaded HTML file in a modern web browser.
+3. Start drawing and creating your animation.
+4. Save your animation as a `.json` project file so you can continue working on it later.
+5. To edit a saved animation, open FrameForge and click the **Load** button.
+6. Select your saved `.json` file to restore the animation.
+
+You can improve one of the included animation projects or create something completely new. Have fun experimenting!
+
+##  Animation Project Files
+
+FrameForge uses `.json` files to save animation projects.
+
+These files may contain information such as:
+
+- Frames
+- Drawings
+- Colors
+- Brush settings
+- Opacity
+- Backgrounds
+- Animation settings
+
+To continue editing a project, click the **Load** button inside FrameForge and select the appropriate `.json` file.
+
+> [!IMPORTANT]
+> Any JSON file with **`FOR PLAYBACK`** in its name is intended only for use with `playback_fixed2.html`. It may not load correctly inside the animation editor.
+
+## Latest Version
+
+The newest version is:
+
+###  FrameForge 3D
+
+You can now download **FrameForge 3D**, the latest major version of the animation maker!
+
+FrameForge has grown from a simple browser animation tool into a more advanced creative environment with improved drawing, themes, exporting, backgrounds, and 3D features.
+
+## Previous Versions
+
+Earlier versions added important features and may still be available in the repository.
+
+### `animation_creator_canvas_ui_themes.html`
+
+This version introduced:
+
+- A redesigned canvas interface
+- Custom themes
+- Additional animation tools
+- General improvements and bug fixes
+
+### `animation_creator_smooth_opacity_background.html`
+
+This update introduced:
+
+- Smoother drawing
+- Brush opacity controls
+- Background image uploads
+- Improved drawing behavior
+
+### Other Updates
+
+Additional updates introduced:
+
+- New paint brushes
+- MP4 animation exporting
+- Improved project loading
+- Bug fixes
+- More creative tools
+- Interface improvements
+- Additional fun features
+
+For the newest features and fixes, use the latest available FrameForge version.
+
+## Browser Compatibility
+
+FrameForge should work in most modern web browsers, including:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Opera
+- Brave
+
+For the best experience, use an updated browser.
+
+## Repository
+
+Download FrameForge, explore the available versions, and find example animation files here:
+
+### [Open the FrameForge Animation Maker Repository](https://github.com/colton1000/frameforge-animation-maker/tree/main)
+
+## 💡 Tips
+
+- Save your animation regularly.
+- Keep backup copies of important `.json` project files.
+- Use clear filenames so you can easily identify your projects.
+- Make sure you use playback-only files with the correct playback HTML.
+- Try different brushes, opacity levels, backgrounds, themes, and animation styles.
+- Use the latest version for the newest features and bug fixes.
+
+## Thank You!
+
+Thank you for checking out **FrameForge Animation Maker**!
+
+Create your own animations, experiment with the tools, and most importantly, have fun bringing your ideas to life! 🎨🎬
