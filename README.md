@@ -127,4 +127,4 @@ Download FrameForge, explore the available versions, and find example animation 
 
 Thank you for checking out **FrameForge Animation Maker**!
 
-Create your own animations, experiment with the tools, and most importantly, have fun bringing your ideas to life! 🎨🎬
+Create your own animations, experiment with the tools, and most importantly, have fun bringing your ideas to life!
