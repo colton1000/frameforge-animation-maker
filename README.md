@@ -24,12 +24,36 @@ Depending on the version you use, FrameForge includes features such as:
 
 ##  Getting Started
 
-1. Download the latest FrameForge HTML file.
-2. Open the downloaded HTML file in a modern web browser.
-3. Start drawing and creating your animation.
-4. Save your animation as a `.json` project file so you can continue working on it later.
-5. To edit a saved animation, open FrameForge and click the **Load** button.
-6. Select your saved `.json` file to restore the animation.
+Choose the full browser app or the compact Firefox extension:
+
+- For the full editor, open the [latest HTML build](versions/latest/frameforge_update_NEW_v4_credits_hints.html) in a modern browser.
+- For a smaller toolbar-based drawing and animation app, install [FrameForge: On the GO!](frameforge_on_the_go_v2_2_fixed_colors/).
+
+## FrameForge: On the GO!
+
+**FrameForge: On the GO!** is a rebuilt, compact 2D version of FrameForge packaged as a Firefox browser extension. It opens from the Firefox toolbar as a popup, so you can sketch and animate without opening the full-size editor. The extension requires Firefox 109 or newer.
+
+### Install in Firefox
+
+This repository contains the extension source for local testing; it is not currently linked to a signed Mozilla Add-ons listing. To load it temporarily:
+
+1. Download or clone this repository to your computer.
+2. In Firefox, open `about:debugging#/runtime/this-firefox`.
+3. Choose **This Firefox**, then **Load Temporary Add-on…**.
+4. Select `manifest.json` inside the [extension folder](frameforge_on_the_go_v2_2_fixed_colors/manifest.json).
+5. Use the FrameForge icon in the Firefox toolbar to open the extension.
+
+Temporary add-ons are removed when Firefox restarts. Repeat these steps to load it again. For a regular installation, use a signed release from Mozilla Add-ons when one is available.
+
+### Draw and animate
+
+- Pick Pencil, Marker, or Eraser, then adjust brush size, opacity, and color.
+- Draw on the canvas; use Undo, Redo, Clear Frame, and onion skin while working.
+- Add blank frames or duplicate existing frames, then use playback controls and FPS to preview the animation.
+- Rename the project as you work. The extension automatically saves the current project in the browser's local storage for the extension.
+- Use **Export Project** to download a `.json` backup, or **Import Project** to open a project exported by the extension.
+
+The extension is intentionally compact and focused on 2D frame animation. Use the [full FrameForge editor](versions/latest/frameforge_update_NEW_v4_credits_hints.html) for its broader feature set, including 3D tools and the larger workspace.
 
 You can improve one of the included animation projects or create something completely new. Have fun experimenting!
 
@@ -114,7 +138,7 @@ For the newest features and fixes, use the latest available FrameForge version.
 
 ## Browser Compatibility
 
-FrameForge should work in most modern web browsers, including:
+The standalone HTML builds should work in most modern browsers, including:
 
 - Google Chrome
 - Microsoft Edge
@@ -123,6 +147,8 @@ FrameForge should work in most modern web browsers, including:
 - Brave
 
 For the best experience, use an updated browser.
+
+**FrameForge: On the GO!** is a Firefox extension and requires Firefox 109 or newer.
 
 ## Repository
 
