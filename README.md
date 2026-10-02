@@ -54,11 +54,12 @@ To continue editing a project, click the **Load** button inside FrameForge and s
 
 The newest version is:
 
-###  FrameForge 3D
+###  FrameForge_update_NEW_v3
 
-You can now download **FrameForge 3D**, the latest major version of the animation maker!
+You can now download **FrameForge_update_NEW_v3**, the latest major version of the animation maker!
 
 FrameForge has grown from a simple browser animation tool into a more advanced creative environment with improved drawing, themes, exporting, backgrounds, and 3D features.
+### [here is the newest version](https://github.com/colton1000/frameforge-animation-maker/blob/main/NEWEST%20VERSIONS/frameforge_update_NEW_v3.html)
 
 ## Previous Versions
 
@@ -95,7 +96,7 @@ Additional updates introduced:
 - Additional fun features
 
 For the newest features and fixes, use the latest available FrameForge version.
-### [here is the newest version]
+
 ## Browser Compatibility
 
 FrameForge should work in most modern web browsers, including:
