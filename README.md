@@ -95,7 +95,7 @@ Additional updates introduced:
 - Additional fun features
 
 For the newest features and fixes, use the latest available FrameForge version.
-
+### [here is the newest version]
 ## Browser Compatibility
 
 FrameForge should work in most modern web browsers, including:
