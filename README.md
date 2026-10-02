@@ -54,12 +54,12 @@ To continue editing a project, click the **Load** button inside FrameForge and s
 
 The newest version is:
 
-###  FrameForge_update_NEW_v3
+###  FrameForge_update_NEW_v4
 
-You can now download **FrameForge_update_NEW_v3**, the latest major version of the animation maker!
+You can now download **FrameForge_update_NEW_v4**, the latest major version of the animation maker!
 
 FrameForge has grown from a simple browser animation tool into a more advanced creative environment with improved drawing, themes, exporting, backgrounds, and 3D features.
-### [here is the newest version](https://github.com/colton1000/frameforge-animation-maker/blob/main/NEWEST%20VERSIONS/frameforge_update_NEW_v3.html)
+### [here is the newest version](https://github.com/colton1000/frameforge-animation-maker/blob/main/NEWEST%20VERSIONS/frameforge_update_NEW_v4_credits_hints.html)
 
 ## Previous Versions
 
