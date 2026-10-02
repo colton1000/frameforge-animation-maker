@@ -4,6 +4,8 @@ Welcome to **FrameForge**, a fun animation maker that runs directly in your web 
 
 No complicated setup or installation is required. Simply download the latest HTML file, open it in your browser, and start creating animations.
 
+For quick access to the latest build, examples, and sample projects, open the [FrameForge index](index.html).
+
 ## Features
 
 Depending on the version you use, FrameForge includes features such as:
@@ -50,6 +52,17 @@ To continue editing a project, click the **Load** button inside FrameForge and s
 > [!IMPORTANT]
 > Any JSON file with **`FOR PLAYBACK`** in its name is intended only for use with `playback_fixed2.html`. It may not load correctly inside the animation editor.
 
+## Repository Layout
+
+The project is organized into easy-to-navigate folders:
+
+- [examples](examples): feature demos and older browser prototypes
+- [versions/latest](versions/latest): newest release builds
+- [versions/archive](versions/archive): earlier version snapshots
+- [addons/animation-creator](addons/animation-creator): optional add-ons and extra tools
+- [projects](projects): saved animation project files
+- [scripts/utility-scripts](scripts/utility-scripts): utility scripts and organizer helpers
+
 ## Latest Version
 
 The newest version is:
@@ -59,13 +72,13 @@ The newest version is:
 You can now download **FrameForge_update_NEW_v4**, the latest major version of the animation maker!
 
 FrameForge has grown from a simple browser animation tool into a more advanced creative environment with improved drawing, themes, exporting, backgrounds, and 3D features.
-### [here is the newest version](https://github.com/colton1000/frameforge-animation-maker/blob/main/NEWEST%20VERSIONS/frameforge_update_NEW_v4_credits_hints.html)
+### [Open the newest version](versions/latest/frameforge_update_NEW_v4_credits_hints.html)
 
 ## Previous Versions
 
 Earlier versions added important features and may still be available in the repository.
 
-### `animation_creator_canvas_ui_themes.html`
+### [animation_creator_canvas_ui_themes.html](examples/animation_creator_canvas_ui_themes.html)
 
 This version introduced:
 
@@ -74,7 +87,7 @@ This version introduced:
 - Additional animation tools
 - General improvements and bug fixes
 
-### `animation_creator_smooth_opacity_background.html`
+### [animation_creator_smooth_opacity_background.html](examples/animation_creator_smooth_opacity_background.html)
 
 This update introduced:
 

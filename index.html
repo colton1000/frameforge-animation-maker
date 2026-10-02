@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ec">
+  <title>FrameForge | Animation Maker</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f2ec;
+      --ink: #1d2926;
+      --muted: #596560;
+      --line: #d8ddd6;
+      --green: #17674f;
+      --green-dark: #104b3a;
+      --coral: #d5664c;
+      --white: #fffefa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.35rem 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-decoration: none;
+    }
+
+    .masthead nav { display: flex; gap: 1.25rem; }
+    .masthead nav a { color: var(--muted); font-size: .9rem; text-decoration: none; }
+    .masthead nav a:hover, .text-link:hover { color: var(--green); }
+
+    main { max-width: 1120px; margin: 0 auto; padding: 3.5rem 2rem 4rem; }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+      align-items: end;
+      gap: 2rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 .65rem;
+      color: var(--green);
+      font-size: .75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 680px;
+      margin-bottom: .8rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      font-weight: 500;
+      line-height: .98;
+    }
+
+    .intro-copy { max-width: 350px; margin: 0 0 .35rem; color: var(--muted); }
+
+    .launch {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 1.5rem;
+      min-height: 205px;
+      padding: 2rem 2.25rem;
+      background: var(--green);
+      color: white;
+    }
+
+    .launch::after {
+      position: absolute;
+      right: 11%;
+      bottom: -105px;
+      width: 240px;
+      height: 240px;
+      border: 1px solid rgb(255 255 255 / 20%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 24px rgb(255 255 255 / 5%), 0 0 0 48px rgb(255 255 255 / 4%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .launch h2 { margin-bottom: .3rem; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 500; }
+    .launch p { margin: 0; color: rgb(255 255 255 / 78%); }
+    .launch-link {
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .85rem 1.1rem;
+      background: var(--white);
+      color: var(--green-dark);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .launch-link:hover { background: #e8ede7; }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin: 2.8rem 0 1rem;
+      padding-bottom: .7rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-heading h2 { margin: 0; font-size: 1rem; }
+    .section-heading p { margin: 0; color: var(--muted); font-size: .85rem; }
+
+    .link-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .link-item { min-height: 116px; padding: 1.1rem 1.15rem; background: var(--white); text-decoration: none; }
+    .link-item:hover { background: #edf2ed; }
+    .link-item h3 { margin-bottom: .3rem; font-size: .98rem; }
+    .link-item p { margin: 0; color: var(--muted); font-size: .86rem; }
+    .arrow { color: var(--coral); font-weight: 800; }
+    .text-link { color: var(--green); font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+
+    .footnote { margin: 1rem 0 0; color: var(--muted); font-size: .85rem; }
+    footer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+
+    @media (max-width: 700px) {
+      .masthead { padding: 1rem 1.25rem; }
+      .masthead nav { gap: .8rem; }
+      main { padding: 2.5rem 1.25rem 3rem; }
+      .intro { grid-template-columns: 1fr; gap: .6rem; }
+      .intro-copy { max-width: 480px; }
+      .launch { grid-template-columns: 1fr; padding: 1.5rem; }
+      .launch-link { justify-self: start; }
+      .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 440px) {
+      .masthead nav a { font-size: .8rem; }
+      .link-grid { grid-template-columns: 1fr; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: .25rem; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="index.html">FRAMEFORGE</a>
+    <nav aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#projects">Projects</a>
+      <a href="README.md">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Browser-based animation studio</p>
+        <h1 id="page-title">Make a little motion.</h1>
+      </div>
+      <p class="intro-copy">Draw frame by frame, experiment with tools, and bring your animation to life right in your browser.</p>
+    </section>
+
+    <section class="launch" aria-labelledby="latest-title">
+      <div>
+        <p class="eyebrow" style="color: #a8ddc8">Latest release</p>
+        <h2 id="latest-title">FrameForge v4</h2>
+        <p>The newest animation maker build, ready to open.</p>
+      </div>
+      <a class="launch-link" href="versions/latest/frameforge_update_NEW_v4_credits_hints.html">Launch FrameForge <span aria-hidden="true">&#8594;</span></a>
+    </section>
+
+    <section id="explore" aria-labelledby="explore-title">
+      <div class="section-heading">
+        <h2 id="explore-title">Explore the collection</h2>
+        <p>Other builds and feature experiments</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="examples/animation_creator_playback_fixed2.html">
+          <h3>Animation playback <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Open the dedicated playback build.</p>
+        </a>
+        <a class="link-item" href="examples/animation_creator_mp4_paintbrush_playfix.html">
+          <h3>MP4 and paintbrushes <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Explore exporting and brush updates.</p>
+        </a>
+        <a class="link-item" href="examples/frameforge_3d_independent_frames_eraser_color.html">
+          <h3>3D and independent frames <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Try a build with 3D tools and frame controls.</p>
+        </a>
+        <a class="link-item" href="examples/animation_creator_canvas_ui_themes.html">
+          <h3>Canvas themes <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Browse a themed canvas interface.</p>
+        </a>
+        <a class="link-item" href="versions/archive/frameforge_update_NEW_v3.html">
+          <h3>Previous release: v3 <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Open an earlier FrameForge release.</p>
+        </a>
+        <a class="link-item" href="addons/animation-creator/animation_creator_multi_addons_no_overlap%201.html">
+          <h3>Animation add-ons <span class="arrow" aria-hidden="true">&#8599;</span></h3>
+          <p>Open the add-on build and extra tools.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Sample projects</h2>
+        <p>JSON files to load in the editor</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="projects/frameforge-project-test.json"><h3>Test project 1 <span class="arrow" aria-hidden="true">&#8599;</span></h3><p>Sample animation data.</p></a>
+        <a class="link-item" href="projects/frameforge-project-test2.json"><h3>Test project 2 <span class="arrow" aria-hidden="true">&#8599;</span></h3><p>Sample animation data.</p></a>
+        <a class="link-item" href="projects/frameforge-project-test3.json"><h3>Test project 3 <span class="arrow" aria-hidden="true">&#8599;</span></h3><p>Sample animation data.</p></a>
+      </div>
+      <p class="footnote">Playback-only project: <a class="text-link" href="projects/frameforge-project(5)-FOR-PLAYBACK.json">frameforge-project(5)-FOR-PLAYBACK.json</a>. Use it with the playback build.</p>
+    </section>
+
+    <footer>
+      <span>FrameForge Animation Maker</span>
+      <a class="text-link" href="README.md">Repository guide</a>
+    </footer>
+  </main>
+</body>
+</html>
