@@ -74,6 +74,8 @@ You can now download **FrameForge_update_NEW_v4**, the latest major version of t
 FrameForge has grown from a simple browser animation tool into a more advanced creative environment with improved drawing, themes, exporting, backgrounds, and 3D features.
 ### [Open the newest version](versions/latest/frameforge_update_NEW_v4_credits_hints.html)
 
+An alternate [online-enabled build](versions/latest/frameforge_online.html) is also available in the latest versions folder.
+
 ## Previous Versions
 
 Earlier versions added important features and may still be available in the repository.
